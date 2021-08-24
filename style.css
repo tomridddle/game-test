@@ -9,7 +9,7 @@ div#board {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(Webp.net-resizeimage.jpg) no-repeat ;
+    background: url(Webp.net-resizeimage.jpg) no-repeat center center ;
 }
 
 div#messageArea {
