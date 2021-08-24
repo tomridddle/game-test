@@ -22,20 +22,20 @@ div#messageArea {
 
 table {
     position: absolute;
-    left: 173px;
-    top: 98px;
+    left: 490px;
+    top: 115px;
     border-spacing: 0;
 }
 
 td {
-    width: 94px;
-    height: 94px;
+    width: 70px;
+    height: 70px;
 }
 
 form {
     position: absolute;
-    bottom: -30px;
-    right: -50px;
+    bottom: 0;
+    right: 0;
     padding: 15px;
     background-color: rgb(83, 175, 19);
 }
@@ -47,10 +47,12 @@ form input {
 }
 
 .hit {
-    background: url(ship.png) no-repeat center center;
+    background: url(ship.png) no-repeat ;
+    background-size:70px;
 }
 
 .miss {
     background: url(miss.png) no-repeat center center;
+    background-size: 55px;
 }
 
