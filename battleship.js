@@ -5,7 +5,6 @@ function init() {
     guessInput.onkeypress = handlerGuessInput;
 
     model.generateShips();
-    console.log(model.ships);
 
 };
 
