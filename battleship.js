@@ -71,8 +71,10 @@ var controller = {
                     }
                 }
                 if (model.shipsSunk === model.numShip) {
-                    alert(`You win the game with ${this.guesses} guesses, meaning that your accuracy is ${Math.round(9/this.guesses*100)}%`);
-                    alert(`Very interesting huh? F5 to play again`)
+                    setTimeout(function() {
+                        alert(`You win the game with ${this.guesses} guesses, meaning that your accuracy is ${Math.round(9/this.guesses*100)}%`);
+                        alert(`Very interesting huh? F5 to play again`)
+                    },3000)
                 }
             }
             else {
