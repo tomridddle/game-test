@@ -61,6 +61,10 @@ var controller = {
                     if (model.isSunk(shipsSunk[i])) {
                         view.displayMessage("You destroyed a ship");
                         view.displayHit(guessConvert);
+                        if (model.shipsSunk === model.numShip) {
+                            alert("You win the game with " +this.guess + " guesses, meaning that your accuracy is " + Math.round(9/this.guesses*100)+"%");
+                            alert(`Very interesting huh? F5 to play again`)
+                        }
                         shipsSunk.splice(i,1);
                         copyNumShips--;
                         break;  
@@ -69,12 +73,6 @@ var controller = {
                         view.displayMessage("HIT!");
                         view.displayHit(guessConvert);
                     }
-                }
-                if (model.shipsSunk === model.numShip) {
-                    setTimeout(function() {
-                        alert(`You win the game with ${this.guesses} guesses, meaning that your accuracy is ${Math.round(9/this.guesses*100)}%`);
-                        alert(`Very interesting huh? F5 to play again`)
-                    },3000)
                 }
             }
             else {
