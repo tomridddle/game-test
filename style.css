@@ -9,8 +9,7 @@ div#board {
     position: relative;
     width: 100vw;
     height: 100vh;
-    margin: auto;
-    background: url(board.jpg) no-repeat ;
+    background: url(rsz_board.png) no-repeat ;
 }
 
 div#messageArea {
